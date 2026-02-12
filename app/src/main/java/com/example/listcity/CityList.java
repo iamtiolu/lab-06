@@ -35,13 +35,13 @@ public class CityList {
         return cities.contains(city);
     }
 
-    public void removeCity(City city) {
+    public void delete(City city) {
         if (!cities.remove(city)) {
             throw new IllegalArgumentException("City does not exist");
         }
     }
 
-    public int sizeCities() {
+    public int countCities() {
         return cities.size();
     }
 
